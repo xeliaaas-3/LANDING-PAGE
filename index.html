@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lic. Carine Marchao | Psicóloga Clínica y Educacional</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════
+       NAVBAR
+  ══════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <nav class="navbar__inner container">
+
+      <a href="#inicio" class="navbar__logo">
+        <span class="icon">Psychiatry</span>
+        Lic. Carine Marchao 
+      </a>
+
+      <ul class="navbar__links">
+        <li><a href="#sobre">Sobre mí</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto" class="btn btn--primary btn--sm">Agendar cita</a></li>
+      </ul>
+
+      <button class="navbar__hamburger" id="menuBtn" aria-label="Abrir menú">
+        <span class="icon">menu</span>
+      </button>
+
+    </nav>
+  </header>
+
+<!-- Overlay oscuro -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+
+<!-- Drawer lateral -->
+<div class="drawer" id="mobileMenu">
+  <div class="drawer__header">
+    <div class="drawer__logo">
+      <span class="icon">psychology</span>
+      Lic. Carine Marchao
+    </div>
+    <button class="drawer__close" id="menuClose" aria-label="Cerrar menú">
+      <span class="icon">close</span>
+    </button>
+  </div>
+
+  <nav class="drawer__body">
+    <p class="drawer__section-title">Navegación</p>
+    <a href="#sobre"       class="drawer__link" onclick="closeMobileMenu()">
+      <span class="icon">person</span> Sobre mí
+    </a>
+    <a href="#servicios"   class="drawer__link" onclick="closeMobileMenu()">
+      <span class="icon">psychology</span> Servicios
+    </a>
+    <a href="#beneficios"  class="drawer__link" onclick="closeMobileMenu()">
+      <span class="icon">favorite</span> Beneficios
+    </a>
+    <a href="#testimonios" class="drawer__link" onclick="closeMobileMenu()">
+      <span class="icon">format_quote</span> Testimonios
+    </a>
+
+    <hr class="drawer__divider" />
+
+    <p class="drawer__section-title">Contacto</p>
+    <a href="#contacto" class="drawer__btn" onclick="closeMobileMenu()">
+      <span class="icon">calendar_month</span>
+      Agendar cita
+    </a>
+    <a href="https://wa.me/595981771474" target="_blank" class="drawer__btn drawer__btn--whatsapp">
+      <span class="icon">chat</span>
+      Escribir por WhatsApp
+    </a>
+  </nav>
+</div>
+
+  <main>
+
+    <!-- ══════════════════════════
+         HERO
+    ══════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+
+        <!-- Texto -->
+        <div class="hero__text fade-up">
+          <span class="badge">Psicóloga Clínica · MP 12.445</span>
+          <h1 class="hero__title">
+            Te acompaño en tu camino hacia el
+            <em>bienestar emocional.</em>
+          </h1>
+          <p class="hero__sub">
+            Un espacio seguro, empático y confidencial, con la Lic. Carine Marchao.
+            Reconectá con tu fortaleza interior a través de la terapia clínica personalizada.
+          </p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn btn--primary btn--lg">Reservar turno</a>
+            <a href="#servicios" class="btn btn--outline btn--lg">Ver servicios</a>
+          </div>
+        </div>
+
+        <!-- Visual -->
+        <div class="hero__visual fade-up">
+          <div class="hero__img-wrap">
+            <div class="hero__img-bg"></div>
+            <div class="hero__img-circle">
+              <img
+                src="img/cari-icon.jpeg"
+                alt="Dra. Valentina Ríos - Psicóloga Clínica"
+                onerror="this.style.display='none'; document.getElementById('hero-placeholder').style.display='flex';"
+              />
+            </div>
+            <div class="hero__badge">
+              <span class="hero__badge-dot"></span>
+              <span>Turnos disponibles online</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         SOBRE MÍ
+    ══════════════════════════ -->
+    <section class="sobre section--alt" id="sobre">
+      <div class="container sobre__inner">
+
+        <!-- Imagen consultorio -->
+        <div class="sobre__img fade-up">
+          <img src="img/cari-icon2.jpeg" alt="Consultorio Dra. Carine Marchao" />
+        </div>
+        <!-- Texto -->
+        <div class="sobre__text fade-up">
+          <span class="eyebrow">Sobre mí</span>
+          <h2 class="section-title">Conocé a Lic. Carine Marchao</h2>
+          <p>
+            Psicóloga clínica recientemente graduada, con una profunda vocación por acompañar a las personas en sus procesos de cambio y bienestar emocional.
+          </p>
+          <p>
+            Mi trabajo se basa en la empatía, la escucha activa y el respeto por la singularidad de cada historia, creando un espacio seguro donde puedas expresarte con confianza.
+          </p>
+          <p>
+           Me encuentro en constante formación para brindarte herramientas actualizadas y acompañarte de manera profesional en tu camino hacia una vida más equilibrada.
+          </p>
+
+          <!-- Stats -->
+        <!--  <div class="sobre__stats">
+            <div class="sobre__stat">
+              <strong>10+</strong>
+              <span>Años de experiencia</span>
+            </div>
+            <div class="sobre__stat">
+              <strong>200+</strong>
+              <span>Pacientes acompañados</span>
+            </div>
+          </div>   -->
+            
+          <!-- Tags -->
+          <div class="tags">
+            <span class="tag">Terapia Cognitivo-Conductual</span>
+            <span class="tag">Mindfulness</span>
+            <span class="tag">Gestión emocional</span>
+            <span class="tag">Psicología positiva</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         SERVICIOS
+    ══════════════════════════ -->
+    <section class="servicios" id="servicios">
+      <div class="container">
+
+        <div class="section-head fade-up">
+          <span class="eyebrow">Servicios</span>
+          <h2 class="section-title">¿En qué puedo ayudarte?</h2>
+          <p class="section-desc">Atención terapéutica especializada, adaptada a tu historia y necesidades únicas.</p>
+        </div>
+
+        <div class="bento fade-up">
+
+          <!-- Card normal -->
+          <div class="bento__card bento__card--white">
+            <div class="bento__icon"><span class="icon">person</span></div>
+            <h3>Terapia Individual</h3>
+            <p>Un espacio personal para explorar tus emociones, pensamientos y conductas. Trabajamos juntos en superar ansiedad, depresión, duelo o crisis vitales.</p>
+            <a href="#contacto" class="bento__link">Consultar <span class="icon">arrow_forward</span></a>
+          </div>
+
+          <!-- Card destacada (2 filas) -->
+          <div class="bento__card bento__card--featured">
+            <div class="bento__icon bento__icon--light"><span class="icon">child_care</span></div>
+            <h3>Terapia para Adolescentes</h3>
+            <p>Acompaño a jóvenes en sus procesos de identidad, manejo emocional y relaciones sociales, con un enfoque empático y libre de juicios.</p>
+            <a href="#contacto" class="btn btn--white">Reservar turno</a>
+          </div>
+
+          <!-- Card normal -->
+          <div class="bento__card bento__card--white">
+            <div class="bento__icon"><span class="icon">psychology</span></div>
+            <h3>Manejo de Ansiedad</h3>
+            <p>Técnicas especializadas para reducir el estrés y recuperar el control sobre tu vida y tu bienestar emocional cotidiano.</p>
+            <a href="#contacto" class="bento__link">Consultar <span class="icon">arrow_forward</span></a>
+          </div>
+
+          <!-- Card suave -->
+          <div class="bento__card bento__card--soft">
+            <div class="bento__icon"><span class="icon">self_improvement</span></div>
+            <h3>Mindfulness Clínico</h3>
+            <p>Cultivá la presencia y la consciencia para mejorar tu salud mental y tu foco en el día a día.</p>
+          </div>
+
+          <!-- Card suave -->
+          <div class="bento__card bento__card--soft">
+            <div class="bento__icon"><span class="icon">video_call</span></div>
+            <h3>Sesiones Online</h3>
+            <p>Terapia profesional desde la comodidad de tu hogar, con total confidencialidad y flexibilidad horaria.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         BENEFICIOS
+    ══════════════════════════ -->
+    <section class="beneficios section--alt" id="beneficios">
+      <div class="container">
+
+        <div class="section-head fade-up">
+          <span class="eyebrow">Mi compromiso</span>
+          <h2 class="section-title">Por qué elegir este espacio</h2>
+          <p class="section-desc">Cada sesión está diseñada para que te sientas escuchado/a, respetado/a y acompañado/a.</p>
+        </div>
+
+        <div class="beneficios__grid fade-up">
+
+          <div class="ben-card">
+            <span class="icon ben-card__icon">lock</span>
+            <h4>Confidencialidad total</h4>
+            <p>Todo lo que compartís queda entre nosotros. Cumplimos estrictamente con el secreto profesional.</p>
+          </div>
+
+          <div class="ben-card">
+            <span class="icon ben-card__icon">explore</span>
+            <h4>Enfoque personalizado</h4>
+            <p>Adapto las herramientas terapéuticas a tu historia y necesidades particulares.</p>
+          </div>
+
+          <div class="ben-card">
+            <span class="icon ben-card__icon">schedule</span>
+            <h4>Horarios flexibles</h4>
+            <p>Turnos disponibles de mañana, tarde y algunos sábados. Online con amplia disponibilidad.</p>
+          </div>
+
+          <div class="ben-card">
+            <span class="icon ben-card__icon">chat_bubble</span>
+            <h4>Sin lista de espera</h4>
+            <p>Primera consulta disponible en menos de 72 hs. No tenés que esperar para comenzar.</p>
+          </div>
+
+          <div class="ben-card">
+            <span class="icon ben-card__icon">public</span>
+            <h4>Atención global</h4>
+            <p>Atendo desde cualquier lugar del mundo. Solo necesitás conexión a internet y privacidad.</p>
+          </div>
+
+          <div class="ben-card ben-card--featured">
+            <span class="icon ben-card__icon">favorite</span>
+            <h4>Sin juicios</h4>
+            <p>Un espacio cálido y libre de prejuicios. Aquí podés ser exactamente quien sos.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         TESTIMONIOS
+    ══════════════════════════ -->
+    <section class="testimonios" id="testimonios">
+      <div class="container">
+
+        <div class="section-head fade-up">
+          <span class="eyebrow">Testimonios</span>
+          <h2 class="section-title">Lo que dicen quienes ya dieron el paso</h2>
+          <p class="section-desc">Experiencias reales de personas que decidieron apostar por su bienestar.</p>
+        </div>
+
+        <div class="test-grid fade-up">
+
+          <div class="test-card">
+            <span class="icon test-card__quote">format_quote</span>
+            <p class="test-card__text">
+              "Llegué en un momento muy oscuro y Cari supo acompañarme con una sensibilidad
+              extraordinaria. Hoy me reconozco de una manera que nunca imaginé posible."
+            </p>
+            <div class="test-card__author">
+              <div class="test-card__avatar test-card__avatar--a">M</div>
+              <div>
+                <strong>Mariana G.</strong>
+                <span>Terapia Individual</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-card test-card--offset">
+            <span class="icon test-card__quote">format_quote</span>
+            <p class="test-card__text">
+              "La terapia online con Carine fue un cambio de vida. Vivo en el exterior y poder
+              tener un espacio en español, con tanto profesionalismo, fue invaluable."
+            </p>
+            <div class="test-card__author">
+              <div class="test-card__avatar test-card__avatar--b">R</div>
+              <div>
+                <strong>Rodrigo M.</strong>
+                <span>Terapia Online</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-card">
+            <span class="icon test-card__quote">format_quote</span>
+            <p class="test-card__text">
+              "Mi hija adolescente se resistía mucho al psicólogo. Con Carine conectó desde la
+              primera sesión. Hoy es ella quien quiere ir. No tengo palabras para agradecerle."
+            </p>
+            <div class="test-card__author">
+              <div class="test-card__avatar test-card__avatar--c">L</div>
+              <div>
+                <strong>Laura P.</strong>
+                <span>Terapia Adolescentes</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════
+         CONTACTO
+    ══════════════════════════ -->
+    <section class="contacto" id="contacto">
+      <div class="container">
+        <div class="contacto__card fade-up">
+
+          <!-- Panel info -->
+          <div class="contacto__info">
+            <h2>Hablemos</h2>
+            <p>El primer paso es el más valioso. Te respondo por WhatsApp a la brevedad.</p>
+
+            <ul class="contacto__details">
+              <li>
+                <span class="icon">chat</span>
+                <span>+595 981 771474</span>
+              </li>
+              <li>
+                <span class="icon">mail</span>
+                <span>carinemarchao@gmail.com</span>
+              </li>
+              <li>
+                <span class="icon">location_on</span>
+                <span>Colonia Narajito · San Vicente · Gral. Resquin</span>
+              </li>
+              <li>
+                <span class="icon">schedule</span>
+                <span>Lun–Vie 9–20 hs · Sáb 9–14 hs</span>
+              </li>
+            </ul>
+
+            <div class="contacto__social">
+               <p>Seguime en</p>
+                <div class="contacto__social-icons">
+                  <a href="https://www.instagram.com/psicarinemarchao/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+                 <a href="https://www.facebook.com/tupagina" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+                 </div>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="contacto__form-wrap">
+            <form id="contactForm" onsubmit="enviarWhatsApp(event)" novalidate>
+
+              <div class="form-group">
+                <label for="campo-nombre">Nombre y apellido</label>
+                <input id="campo-nombre" type="text" placeholder="Tu nombre completo" required />
+              </div>
+
+              <div class="form-group">
+                <label for="campo-motivo">Motivo de consulta</label>
+                <select id="campo-motivo">
+                  <option value="">Seleccionar…</option>
+                  <option>Terapia individual</option>
+                  <option>Terapia para adolescentes</option>
+                  <option>Terapia para niños</option>
+                  <option>Consulta general</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="campo-mensaje">Mensaje</label>
+                <textarea id="campo-mensaje" rows="5" placeholder="Contame brevemente qué te trae por aquí…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full btn--lg">
+                <span class="icon">chat</span>
+                Enviar por WhatsApp
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════
+       FOOTER
+  ══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <a href="#inicio" class="footer__logo">
+        <span class="icon">spa</span>
+        Lic. Carine Marchao
+      </a>
+
+      <nav class="footer__links">
+        <a href="#sobre">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <p class="footer__copy">© 2026 Lic Carine Marchao · Todos los derechos reservados</p>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
